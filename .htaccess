@@ -1,0 +1,5 @@
+DirectoryIndex trangchu.html
+
+RewriteEngine on
+RewriteCond %{HTTPS} off
+RewriteRule ^.*$ https://%{SERVER_NAME}%{REQUEST_URI} [L,R=301]
